@@ -19,7 +19,7 @@ DAYS_PER_MONTH= dict(zip(MONTH_NUMS,DAYS_MONTH))
 def connect_to_db():
     # todo: once connected change to config file instead of str : https://www.postgresqltutorial.com/postgresql-python/connect/
     try:
-        conn = psycopg2.connect(host="localhost",database="bnames", user="postgres", password="itCanbedone", port=5433 )
+        conn = psycopg2.connect(host="localhost",database="bnames", user="postgres", password="****", port=5433 )
         cur = conn.cursor()
         return cur
     except psycopg2.OperationalError as ex:
